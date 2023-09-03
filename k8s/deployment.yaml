@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-
+  namespace: django-app
   name: todo-deployment
 
   labels:
@@ -23,6 +23,7 @@ spec:
   template:
 
     metadata:
+      namespace: django-app
 
       labels:
 
